@@ -1,0 +1,30 @@
+{
+  "name": "axelg.xyz",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "src/index.js",
+  "dependencies": {
+    "bot-utils": "^1.2.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "sqlite": "^2.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelgreavette/axelg.xyz.git"
+  },
+  "keywords": [
+    "Website",
+    "Axel Greavette"
+  ],
+  "author": "Axel Greavette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelgreavette/axelg.xyz/issues"
+  },
+  "homepage": "https://axelg.xyz"
+}
