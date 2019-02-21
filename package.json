@@ -1,5 +1,5 @@
 {
-  "name": "axelg.xyz",
+  "name": "axelgreavette.xyz",
   "version": "1.0.0",
   "description": "Personal Website",
   "main": "src/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axelgreavette/axelg.xyz.git"
+    "url": "git+https://github.com/axelgreavette/axelgreavette.xyz.git"
   },
   "keywords": [
     "Website",
@@ -24,7 +24,7 @@
   "author": "Axel Greavette",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/axelgreavette/axelg.xyz/issues"
+    "url": "https://github.com/axelgreavette/axelgreavette.xyz/issues"
   },
   "homepage": "https://axelg.xyz"
 }
