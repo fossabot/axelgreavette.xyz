@@ -5,7 +5,7 @@ const { join } = require("path")
 const Legacy = express.Router()
 const vhost = require("vhost")
 
-Legacy.use("/l", express.static(join(__dirname, "legacy")))
+Legacy.use("/", express.static(join(__dirname, "legacy")))
 
 app.use(vhost("legacy.axelgreavette.xyz", Legacy))
 
