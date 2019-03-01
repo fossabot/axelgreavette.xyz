@@ -1,9 +1,8 @@
-const subdomain = require("express-subdomain")
+const vhost = require("vhost")
 const { join } = require("path")
 
-module.exports = (router, express, app) => {
+module.exports = (express, app) => {
 
-  router.use("/l", express.static(join(__dirname, "legacy")))
-  app.use(subdomain("legacy", router))
+  app.use(vhost("legacy.axelgreavette.xyz", express.static(join(__dirname, "legacy"))))
   
 }
