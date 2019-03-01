@@ -12,7 +12,7 @@ app.use(vhost("legacy.axelgreavette.xyz", Legacy))
 app.use('/', express.static(join(__dirname, "front-end")))
 
 app.get("*", function(req, res, next) {
-    res.redirect("/oof/its/a/404")
+    res.status(404).redirect("/oof/its/a/404")
 })
 
 app.get("/oof/its/a/404", function(req, res, next) {
