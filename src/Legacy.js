@@ -3,7 +3,7 @@ const { join } = require("path")
 let router
 
 module.exports = (express, app) => {
-  router = express.router()
+  router = express.Router()
   
   router.get("/", (req, res, next) => { res.send("huh wierd eh?") })
   //express.static(join(__dirname, "legacy"))
