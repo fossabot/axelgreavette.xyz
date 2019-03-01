@@ -5,7 +5,7 @@ let router
 module.exports = (express, app) => {
   router = express.Router()
   
-  router.get("/", (req, res, next) => { res.send("huh wierd eh?") })
+  router.get("/wierd", (req, res, next) => { res.send("huh wierd eh?") })
   //express.static(join(__dirname, "legacy"))
   app.use(vhost("legacy.axelgreavette.xyz", router))
   
