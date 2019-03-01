@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>API Info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><strong>K i r o x</strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/about/website">Website</a></li>
+					<li class="active"><a href="/about/api">API</a></li>
+          <li><a href="/about/contact">Contact</a></li>
+
+        </ul>
+      </li>  
+		</ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container home-box" style="text-align:left;">
+  <h3>API Documention and Information:</h3>
+  <p style="font-size:75%;">&emsp;<a href="/api">Endpoints List</a></p><br>
+  <h4>Doc Formatting:</h4>
+  <pre>
+ - GET /api/examples/docs?number={INPUT}&type={INPUT}
+    
+   - :: The start of a request URL.
+   GET :: Type of request. Possible values: GET, POST, PATCH, DELETE, PUT, HEAD, OPTIONS
+   /api/examples/docs :: Path. Always starts with /api/. Will be specified for each Endpoint
+   ? :: Represents the start of a query. In requests with it listed it is always required.
+   number= :: The query
+   {INPUT} :: The user given input for the query
+   & :: Represents the start of another query. 
+   type= :: The second query
+  </pre>
+  <br>
+  <h4>URL Shortener APIs:</h4>
+  <pre>
+ - GET /api/urls/submit?longurl={INPUT}
+
+   Returns a response containing the submited longurl, resulting shorturl, and url-id
+  
+   {INPUT} :: A HTTP or HTTPS link. 
+   
+   
+ - GET /api/urls/listed
+    
+   Returns an array of all urls currently in the DB. Each entry contains the longurl, shorturl, and url-id
+  </pre>
+  <br>
+  <h4>Quote API</h4>
+  <pre>
+ - GET /api/quote
+
+  Returns a response containing a random quote
+  </pre>
+  <br>
+  <br>
+</div>
+</body>
+<footer>
+</footer>
+</html>

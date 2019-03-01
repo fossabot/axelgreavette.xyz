@@ -1,0 +1,40 @@
+.special-menu {
+    width: 440px !important;
+    height: auto !important;
+}
+.special-entry {
+	padding: 5px;
+}
+@font-face{
+	font-family: 'BM';
+	src:url('./../../fonts/Banks&MilesSingleLine.ttf') format('truetype')
+}
+body {
+	font-family: BM;
+	color: #437F97;
+	font-size: 20px;
+	background-color: #01295F;
+}
+.home-box {
+	padding-top: 15%;
+}
+.navbar {
+	border-radius: 0px;
+	background-color: #592E83;
+	border-color: #592E83;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #502977;
+	color: #4789A3;
+}
+.dropdown-menu {
+	background-color: #592E83;
+	color: #4789A3;
+}
+.dropdown-menu>li>a{
+	color: #4789A3;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background-color: #01295F;
+	color: #4789A3;
+}
