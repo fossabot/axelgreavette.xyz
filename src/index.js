@@ -2,8 +2,12 @@ require("dotenv").config()
 const express = require('express')
 const app = express()
 const { join } = require("path")
+const Legacy = express.Router()
+const vhost = require("vhost")
 
-require("./Legacy.js")(express, app)
+Legacy.use("/", express.static(join(__dirname, "legacy"))))
+
+app.use(vhost("legacy.axelgreavette.xyz", Legacy))
 
 app.use('/', express.static(join(__dirname, "front-end")))
 
