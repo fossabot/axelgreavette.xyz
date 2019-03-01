@@ -11,9 +11,7 @@ app.use(vhost("legacy.axelgreavette.xyz", Legacy))
 
 app.use('/', express.static(join(__dirname, "front-end")))
 
-app.get("*", function(req, res, next) {
-  res.redirect("/oof/its/a/404")
-})
+app.get("*", res.redirect("/oof/its/a/404"))
 
 app.get("/oof/its/a/404", function(req, res, next) {
     res.send("Roses are red,\n Voilets arn't blue,\n This is a 404 page, \n It's not to be viewed by you")
