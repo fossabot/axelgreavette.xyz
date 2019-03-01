@@ -7,4 +7,4 @@ module.exports = (router, express, app) => {
   
   app.use(subdomain("legacy", router))
   
-})
+}
