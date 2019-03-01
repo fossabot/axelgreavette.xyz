@@ -5,11 +5,11 @@ const { join } = require("path")
 const Legacy = express.Router()
 const vhost = require("vhost")
 
-Legacy.use("/", express.static(join(__dirname, "legacy")))
+Legacy.all("/", express.static(join(__dirname, "legacy")))
 
 app.use(vhost("legacy.axelgreavette.xyz", Legacy))
 
-app.use('/', express.static(join(__dirname, "front-end")))
+app.all('/', express.static(join(__dirname, "front-end")))
 
 app.get("*", function(req, res, next) {
     res.status(404).redirect("/oof/its/a/404")
