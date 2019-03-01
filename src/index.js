@@ -1,8 +1,9 @@
 require("dotenv").config()
 const express = require('express')
 const app = express()
+const { join } = require("path")
 
-app.use('/', express.static("front-end"))
+app.use('/', express.static(join(__dirname, "front-end")))
 
 require("./Legacy.js")(express, app)
 
