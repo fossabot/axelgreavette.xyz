@@ -6,5 +6,5 @@ module.exports = {
     "discord_invite": "https://discord.gg/SjBs52S",
     "patreon": "https://www.patreon.com/bePatron?u=10511182",
     "meta-description": "This is my personal statement to the world saying \"Hey! I exist\". That and a general collection of stuff I've made.",
-    "icon-url": "assets/imgs/logo.png"
+    "logo-icon": "assets/imgs/logo.png"
 }
