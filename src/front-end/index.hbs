@@ -7,7 +7,7 @@
     <meta name="author" content="Axel Greavette">
     <link rel="icon" href="assets/imgs/logo.png">
 
-    <title>Axel Greavette</title>
+    <title>{{ name }}</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -36,7 +36,7 @@
         <h1 class="cover-heading"><img src="assets/imgs/logo.png" style="height:8.5rem" draggable="false"/><br>I am {{ name }}</h1>
         <p class="lead">I'm a <strong>{{ age }}</strong> year old <strong>backend developer</strong>, with a strong background in <strong>Node.JS</strong>, using libraries and frameworks like <strong>Express</strong> and <strong>Electron</strong>, who's <strong>always</strong> willing to <strong>learn</strong> and <strong>experiment</strong>.</p>
         <p class="nav nav-masthead justify-content-center socials">
-            <a href="https://instagram.com/axel.greavette"><i class="fab fa-instagram hvr-grow" title="Instagram"></i></a><a href="https://github.com/axelgreavette"><i class="fab fa-github-square hvr-grow" title="GitHub"></i></a><a href="https://discord.gg/SjBs52S"><i class="fab fa-discord hvr-grow" title="Discord"></i></a>
+            <a href="https://instagram.com/axel.greavette"><i class="fab fa-instagram hvr-grow" title="Instagram"></i></a><a href="https://github.com/axelgreavette"><i class="fab fa-github-square hvr-grow" title="GitHub"></i></a><a href="https://discord.gg/SjBs52S"><i class="fab fa-discord hvr-grow" title="Discord"></i></a><a href={{ paypal }}><i class="fab fa-paypal hvr-grow" title="Donate on PayPal"></i></a><a href="{{ patreon }}><i class="fab fa-patreon hvr-grow" title="Donate on Patreon"></i></a>
         </p>
       </main>
 
