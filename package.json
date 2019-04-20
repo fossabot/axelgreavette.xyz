@@ -2,19 +2,21 @@
   "name": "axelgreavette.xyz",
   "version": "1.0.1",
   "description": "Personal Website",
-  "main": "src/index.js",
+  "main": "build/app.js",
   "dependencies": {
-    "cors": "^2.8.4",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.16.1",
     "dotenv": "^6.2.0",
     "express": "^4.16.3",
-    "express-subdomain": "^1.0.5",
-    "hbs": "^4.0.3",
-    "sqlite": "^2.9.2",
+    "hbs": "^4.0.4",
     "vhost": "^3.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.4.4"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node build/app.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

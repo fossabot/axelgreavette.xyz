@@ -3,3 +3,4 @@ package-lock.json
 *.sqlite3
 *.sqlite
 *.db
+build
